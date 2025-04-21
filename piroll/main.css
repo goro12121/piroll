@@ -1,5 +1,5 @@
 :root {
-<<<<<<< HEAD
+
   /* Colors */
   --color-accent: #10c9c3;
   --color-black: #000;
@@ -47,6 +47,49 @@ body {
   height: 100%;
   max-width: 1600px;
   margin: auto;
+}
+header {
+  position: fixed;
+  width: 100%;
+  height: 4em;
+  border: 1px solid black
+}
+.wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-logo {
+    height: 3em;
+    width: 4em;
+    position: relative;
+}
+
+.header-logo>img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.header_nav {
+
+}
+.header_list{
+  display: flex;
+  gap: 1em;
+  list-style: none;
+
+
+}
+.header_link{
+  color: var(--color-dark);
+
+}
+
+.header_link>a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .main {
@@ -399,21 +442,7 @@ body {
 .comment {
   width: 400px;
 }
-=======
-    /* Colors */
-    --color-accent: #10c9c3;
-    --color-black: #000;
-    --color-dark: #222;
-    --color-grey: #888;
-    --color-light: #eee;
-    --color-white: #fff;
-    /* Font Sizes */
-    --font-xs: 12px;
-    --font-s: 16px;
-    --font-m: 18px;
-    --font-l: 24px;
-    --font-xl: 32px;
-  }
+
   
   * {
     box-sizing: border-box;
@@ -692,4 +721,3 @@ body {
     background: #ddd;
     transition: 0.3s;
   }
->>>>>>> bcc5f85b292024c71619fecb46a764f47af82dc5
