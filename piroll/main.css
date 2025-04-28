@@ -57,6 +57,8 @@ header {
   position: fixed;
   width: 100%;
   backdrop-filter: blur(10px);
+  z-index: 99999  
+    ;
  
 }
 .wrap {
