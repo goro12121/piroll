@@ -521,3 +521,80 @@ video{
   line-height: 24px;
   color: #787878
 }
+
+.sponsors{
+  padding: 80px 0;
+}
+.sponsors_wrap{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+.sponsors_item{
+  width: minmax(150px, 250px);
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.sponsors_item > img {
+  width:  100%;
+}
+
+
+.contact{ 
+  padding: 80px 0;
+  background: var(--color-grey-5);
+}
+.contact_wrap{ 
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2em
+}
+.contact_heading{
+
+}
+.contact_text{
+
+}
+.common_text{
+
+}
+.contact_form{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: 1fr 1fr 4fr 1fr
+}
+.contact_input{
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: 1px solid var(--color-grey-3)
+}
+.contact_input_name{
+
+}
+.contact_input{
+
+}
+.contact_input_email{
+
+}
+.contact_input{
+}
+.contact_input_title{
+
+}
+.contact_input{
+
+}
+.contact_input_comment{
+
+}
+
+.contact_button {
+
+}
