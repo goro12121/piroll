@@ -2,6 +2,8 @@
 
   /* Colors */
   --color-accent: #10c9c3;
+  --color-accent-hover: #0aa;
+  --color-accent-active: #088;
   --color-black: #000;
 
   --color-grey-1: #222;
@@ -25,15 +27,20 @@ html {
   padding: 0;
   margin: 0;
 }
-html {
-  scroll-behavior: smooth;
-}
+
 body {
   margin: 0;
   min-height: 100vh;
   font-family: "Montserrat", sans-serif;
 }
 
+ a {
+  color: inherit;
+  text-decoration: none;
+ }
+ button {
+  border: none;
+}
 .common_heading {
   font-weight: 500;
   font-size: var(--font-xl);
@@ -48,7 +55,11 @@ body {
   line-height: 1.5;
   font-family: "Nunito Sans", sans-serif;
 }
-
+.common_input{
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: 1px solid var(--color-grey-3)
+}
 .container {
   width: 94%;
   height: 100%;
@@ -366,6 +377,7 @@ header {
   margin: auto;
   gap: 2em;
 
+  
 
 }
 .process_heading{
@@ -553,48 +565,68 @@ video{
   text-align: center;
   display: flex;
   flex-direction: column;
-  gap: 2em
-}
-.contact_heading{
+  gap: 2em;
 
 }
+
 .contact_text{
-
+  font-family: "Nunito Sans";
 }
-.common_text{
 
-}
 .contact_form{
   display: grid;
   grid-template-columns: repeat(2,1fr);
-  grid-template-rows: 1fr 1fr 4fr 1fr
-}
-.contact_input{
-  padding: 8px 12px;
-  border-radius: 4px;
-  border: 1px solid var(--color-grey-3)
+  grid-template-rows: 1fr 1fr 4fr 1fr;  
+  gap: 10px;
+  grid-template-areas: 
+  
+  "name email"
+  "title title"
+  "comment comment"
+  "button button";
+  gap: 1em;
 }
 .contact_input_name{
-
+ grid-area: name;
 }
-.contact_input{
 
-}
 .contact_input_email{
+  grid-area: email;
+}
 
-}
-.contact_input{
-}
 .contact_input_title{
-
+   grid-area:title ;
+  
+}
+.contact_input_text {
+  grid-area: text;
 }
 .contact_input{
-
+  
 }
 .contact_input_comment{
+  grid-area: comment;
 
 }
 
 .contact_button {
+  grid-area: button;
+  background: #10C9C3;
+  color:  var(--color-white);
+  border-radius: 4px;
+  padding: 8px 32px;
+  justify-self: center;
+  cursor: pointer;
+  transition: 0.3s
+  
+}
 
+.contact_button:hover {
+  background: var(--color-accent-hover);
+  transition: 0.3s
+}
+
+.contact_button:active {
+  background: var(--color-accent-active);
+  transition: 0.3s
 }
